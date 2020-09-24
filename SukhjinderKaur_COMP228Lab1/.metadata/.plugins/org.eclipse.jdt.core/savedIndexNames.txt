@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+G:\Semester-3\COMP228-005-Java Programming\JavaProgramming\SukhjinderKaur_COMP228Lab1\.metadata\.plugins\org.eclipse.jdt.core
+3702046336.index
+2196199803.index

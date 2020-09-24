@@ -1,0 +1,36 @@
+package exercise01;
+
+public class SingerTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//deriver class or the test class which has the method main
+		   Singers singer1 = new Singers(1,"Tim","15 East Bolevard","07-07-1998",4);
+		   int singer1Id = singer1.getSingerId();
+	       String singer1Name = singer1.getName();
+	       String singer1Address = singer1.getAddress();
+	       String singer1DateOfBirth=singer1.getDateOfBirth();
+	       int singer1NumberOfAlbums = singer1.getNumberOfAlbumsPublished();
+
+	       System.out.println("Cat's name: " + smudgeName);
+	       System.out.println("Cat's age: " + smudgeAge);
+	       System.out.println("Cat's weight: " + smudgeWeight);
+	   }
+		
+		
+		
+		  // other method
+		  Singers singer1 = new Singers(1,"Tim","15 East Bolevard","07-07-1998",4);
+		  System.out.println(singer1.toString());
+		  
+		  Singers singer2 = new Singers(2,"Brad Pitt","67 Avenue Scarborough","09-06-1990",10);
+		  System.out.println(singer2.toString());
+		  
+		  Singers singer3 = new Singers(3,"Madonna", "40 West Toronto","15-03-1982", 12);
+		  System.out.println(singer3.toString());
+		  
+		  Singers singer4 = new Singers(4,"John","13 E Street Bramptom","04-11-1996", 9);
+		  System.out.println(singer4.toString());
+		  
+	}
+}

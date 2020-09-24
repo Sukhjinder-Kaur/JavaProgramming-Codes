@@ -1,0 +1,10 @@
+package exercise01;
+
+public class Singers {
+	//define instance members
+	//define constructors
+	//including the Overloaded
+	//define getters
+	//define setters
+
+}//end of the class
