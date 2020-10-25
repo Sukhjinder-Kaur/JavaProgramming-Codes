@@ -226,7 +226,7 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_ycxqdf27Eeqz_baF3KneVg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SingerTest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SingerTest.java&quot; partName=&quot;SingerTest.java&quot; title=&quot;SingerTest.java&quot; tooltip=&quot;SukhjinderKaur_COMP228Lab1/src/exercise01/SingerTest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SukhjinderKaur_COMP228Lab1/src/exercise01/SingerTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1481&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SingerTest.java&quot; partName=&quot;SingerTest.java&quot; title=&quot;SingerTest.java&quot; tooltip=&quot;SukhjinderKaur_COMP228Lab1/src/exercise01/SingerTest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SukhjinderKaur_COMP228Lab1/src/exercise01/SingerTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;50&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -374,7 +374,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ycyRbv27Eeqz_baF3KneVg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_POqREAQ3EeuIvOnTvjyfpg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_yc6z5v27Eeqz_baF3KneVg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_meFs8BGcEeukvJQNSyAjDQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_yc6z5v27Eeqz_baF3KneVg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ycyRe_27Eeqz_baF3KneVg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -405,7 +405,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ycy4Lf27Eeqz_baF3KneVg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_POstUAQ3EeuIvOnTvjyfpg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_yc6NSv27Eeqz_baF3KneVg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_meJXUBGcEeukvJQNSyAjDQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_yc6NSv27Eeqz_baF3KneVg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_ycy4OP27Eeqz_baF3KneVg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -447,6 +447,7 @@
       <children xsi:type="menu:ToolControl" xmi:id="_MEC30P6oEeqCU-JxBl5zTw" elementId="left(IDEWindow).(org.eclipse.jdt.ui.JavaPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
+        <tags>MinimizedAndShowing</tags>
       </children>
     </trimBars>
     <trimBars xmi:id="_ycy4Wv27Eeqz_baF3KneVg" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.platform" side="Right">
@@ -740,6 +741,7 @@
     <bindings xmi:id="_yc0GYv27Eeqz_baF3KneVg" keySequence="CTRL+2 R" command="_yc6NY_27Eeqz_baF3KneVg"/>
     <bindings xmi:id="_yc0GY_27Eeqz_baF3KneVg" keySequence="CTRL+2 L" command="_yc5mZv27Eeqz_baF3KneVg"/>
     <bindings xmi:id="_yc0GZP27Eeqz_baF3KneVg" keySequence="CTRL+2 M" command="_yc60F_27Eeqz_baF3KneVg"/>
+    <bindings xmi:id="_VvK4kBGcEeuH9qW0633nCg" keySequence="ALT+CTRL+C" command="_Vu7oARGcEeuH9qW0633nCg"/>
   </bindingTables>
   <bindingTables xmi:id="_yc0GZf27Eeqz_baF3KneVg" elementId="org.eclipse.core.runtime.xml" bindingContext="_yc0G7P27Eeqz_baF3KneVg">
     <bindings xmi:id="_yc0GZv27Eeqz_baF3KneVg" keySequence="CTRL+SHIFT+P" command="_yc6NiP27Eeqz_baF3KneVg"/>
@@ -882,6 +884,7 @@
   <bindingTables xmi:id="_yc0G2P27Eeqz_baF3KneVg" bindingContext="_yc0ta_27Eeqz_baF3KneVg"/>
   <bindingTables xmi:id="_yc0G2f27Eeqz_baF3KneVg" bindingContext="_yc0tbP27Eeqz_baF3KneVg"/>
   <bindingTables xmi:id="_yc0G2v27Eeqz_baF3KneVg" bindingContext="_yc0tbf27Eeqz_baF3KneVg"/>
+  <bindingTables xmi:id="_WAOMURGcEeuH9qW0633nCg" bindingContext="_WAOMUBGcEeuH9qW0633nCg"/>
   <rootContext xmi:id="_yc0G2_27Eeqz_baF3KneVg" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_yc0G3P27Eeqz_baF3KneVg" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
       <children xmi:id="_yc0G3f27Eeqz_baF3KneVg" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.platform" name="%bindingcontext.name.bindingView"/>
@@ -966,6 +969,7 @@
   <rootContext xmi:id="_yc0ta_27Eeqz_baF3KneVg" elementId="org.eclipse.ui.WorkingSetActionSet" name="Auto::org.eclipse.ui.WorkingSetActionSet"/>
   <rootContext xmi:id="_yc0tbP27Eeqz_baF3KneVg" elementId="org.eclipse.ui.actionSet.openFiles" name="Auto::org.eclipse.ui.actionSet.openFiles"/>
   <rootContext xmi:id="_yc0tbf27Eeqz_baF3KneVg" elementId="org.eclipse.ui.edit.text.actionSet.presentation" name="Auto::org.eclipse.ui.edit.text.actionSet.presentation"/>
+  <rootContext xmi:id="_WAOMUBGcEeuH9qW0633nCg" elementId="net.sf.eclipsecs.ui.actionSet" name="Auto::net.sf.eclipsecs.ui.actionSet"/>
   <descriptors xmi:id="_yc0tbv27Eeqz_baF3KneVg" elementId="org.eclipse.e4.ui.compatibility.editor" allowMultiple="true" category="org.eclipse.e4.primaryDataStack" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor">
     <tags>Editor</tags>
     <tags>removeOnHide</tags>
@@ -1310,6 +1314,18 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.wst.xml.ui"/>
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
+  </descriptors>
+  <descriptors xmi:id="_WAEbUBGcEeuH9qW0633nCg" elementId="net.sf.eclipsecs.ui.stats.views.MarkerStatsView" label="Checkstyle violations" iconURI="platform:/plugin/net.sf.eclipsecs.ui/icons/listingView.gif" tooltip="" category="Checkstyle" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="net.sf.eclipsecs.ui.stats.views.MarkerStatsView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="net.sf.eclipsecs.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Checkstyle</tags>
+  </descriptors>
+  <descriptors xmi:id="_WAG3kBGcEeuH9qW0633nCg" elementId="net.sf.eclipsecs.ui.stats.views.GraphStatsView" label="Checkstyle violations chart" iconURI="platform:/plugin/net.sf.eclipsecs.ui/icons/graphView.gif" tooltip="" category="Checkstyle" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="net.sf.eclipsecs.ui.stats.views.GraphStatsView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="net.sf.eclipsecs.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Checkstyle</tags>
   </descriptors>
   <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
     <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
@@ -2263,6 +2279,9 @@
   <commands xmi:id="_yc8pRv27Eeqz_baF3KneVg" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.tasks.ui.open.repositories.view" commandName="Show Task Repositories View" description="Show Task Repositories View" category="_yc8pd_27Eeqz_baF3KneVg"/>
   <commands xmi:id="_yc8pR_27Eeqz_baF3KneVg" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.doc.legend.show.action" commandName="Show UI Legend" description="Show Tasks UI Legend" category="_yc8pd_27Eeqz_baF3KneVg"/>
   <commands xmi:id="_yc8pSP27Eeqz_baF3KneVg" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.context.ui.actions.tasklist.focus" commandName="Focus on Workweek" description="Focus on Workweek" category="_yc8pd_27Eeqz_baF3KneVg"/>
+  <commands xmi:id="_Vu7oABGcEeuH9qW0633nCg" elementId="CheckstylePlugin.PurgeCaches" commandName="Purge Checkstyle caches" description="Purges internal Checkstyle caches to force reloading of auxiliary configuration files (e.g. suppression.xml)" category="_Vu6Z4RGcEeuH9qW0633nCg"/>
+  <commands xmi:id="_Vu7oARGcEeuH9qW0633nCg" elementId="CheckstylePlugin.ApplyCheckstyleFixes" commandName="Apply Checkstyle fixes" description="Apply available Checkstyle quickfixes on the whole file" category="_yc8pdP27Eeqz_baF3KneVg"/>
+  <commands xmi:id="_V5mm8BGcEeuH9qW0633nCg" elementId="AUTOGEN:::net.sf.eclipsecs.ui.actionSet/net.sf.eclipsecs.action.purgecaches" commandName="Purge Checkstyle caches" description="Purges internal Checkstyle caches to force reloading of auxiliary configuration files (e.g. suppression.xml)" category="_yc8pd_27Eeqz_baF3KneVg"/>
   <addons xmi:id="_yc8pSf27Eeqz_baF3KneVg" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_yc8pSv27Eeqz_baF3KneVg" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_yc8pS_27Eeqz_baF3KneVg" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -2310,4 +2329,5 @@
   <categories xmi:id="_yc8pdf27Eeqz_baF3KneVg" elementId="org.eclipse.mylyn.commons.repositories.ui.category.Team" name="Team"/>
   <categories xmi:id="_yc8pdv27Eeqz_baF3KneVg" elementId="org.eclipse.oomph.commands" name="Oomph"/>
   <categories xmi:id="_yc8pd_27Eeqz_baF3KneVg" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
+  <categories xmi:id="_Vu6Z4RGcEeuH9qW0633nCg" elementId="net.sf.eclipsecs.ui" name="Checkstyle"/>
 </application:Application>

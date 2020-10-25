@@ -99,7 +99,7 @@ public class QuestionBank {
 		}
 	 	// calculating score and displaying result
 		score = correctAnswers / 5 * 100 ;
-		String result = String.format(" You have answered %d correct and %d incorrect answers.Your percentage is %d%%.",correctAnswers,incorrectAnswers,score);
+		String result = String.format(" You have answered %d correct and %d incorrect answers.Your percentage is %d.",correctAnswers,incorrectAnswers,score);
 		JOptionPane.showMessageDialog(null, result,"Test Score",JOptionPane.INFORMATION_MESSAGE);
 	}
 }
