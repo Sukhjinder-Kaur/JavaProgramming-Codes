@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane layoutX="44.0" layoutY="14.0" prefHeight="455.0" prefWidth="523.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <TabPane fx:id="tabPane" layoutX="5.0" layoutY="5.0" prefHeight="435.0" prefWidth="503.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab fx:id="view_Tab" text="View Player">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="348.0">
+                           <children>
+                              <VBox layoutX="4.0" layoutY="2.0" prefHeight="394.0" prefWidth="487.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <effect>
+                                    <Glow level="0.62" />
+                                 </effect>
+                                 <children>
+                                    <Label text="Select Player" />
+                                    <ComboBox fx:id="players_Combo" prefWidth="150.0" />
+                                    <GridPane>
+                                      <columnConstraints>
+                                        <ColumnConstraints halignment="LEFT" hgrow="NEVER" maxWidth="247.0" minWidth="10.0" prefWidth="160.0" />
+                                        <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="343.0" minWidth="10.0" prefWidth="343.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Player Id" />
+                                          <Label text="First Name" GridPane.rowIndex="1" />
+                                          <Label text="Last Name" GridPane.rowIndex="2" />
+                                          <Label prefHeight="17.0" prefWidth="65.0" text="Address" GridPane.rowIndex="3" />
+                                          <Label text="Postal Code" GridPane.rowIndex="4" />
+                                          <Label text="Province" GridPane.rowIndex="5" />
+                                          <TextField fx:id="ViewPlayerId_TextField" prefHeight="25.0" prefWidth="324.0" GridPane.columnIndex="1" />
+                                          <TextField fx:id="ViewProvince_TextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <TextField fx:id="ViewPostalCode_TextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <TextField fx:id="ViewAddress_TextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField fx:id="ViewLastName_TextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <TextField fx:id="ViewFirstName_TextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Phone Number" GridPane.rowIndex="6" />
+                                          <TextField fx:id="ViewPhoneNumber_TextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                       </children>
+                                    </GridPane>
+                                    <HBox alignment="TOP_RIGHT" prefHeight="29.0" prefWidth="503.0">
+                                       <children>
+                                          <Button fx:id="EditButton" mnemonicParsing="false" onAction="#OnEdit" prefHeight="25.0" prefWidth="54.0" text="Edit">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button fx:id="UpdateButton" mnemonicParsing="false" onAction="#OnUpdate" text="Update" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="game_Tab" text="Game Results">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="120.0" layoutY="14.0" prefHeight="426.0" prefWidth="523.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <GridPane>
+                                      <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Select Player" />
+                                          <ComboBox fx:id="gameResultPlayers_ComboBox" prefHeight="25.0" prefWidth="172.0" GridPane.rowIndex="1" />
+                                          <Label text="Start Date" GridPane.columnIndex="1" />
+                                          <Label text="End Date" GridPane.columnIndex="2" />
+                                          <DatePicker fx:id="gameResultStart_DatePicker" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <DatePicker fx:id="gameResultEnd_DatePicker" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                          <Button fx:id="gameResultFilter_Button" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Filter" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                       </children>
+                                    </GridPane>
+                                    <HBox prefHeight="187.0" prefWidth="523.0">
+                                       <children>
+                                          <ListView fx:id="PlayerGameId_ListView" prefHeight="187.0" prefWidth="121.0" />
+                                          <ListView fx:id="GameId_ListView" prefHeight="187.0" prefWidth="126.0" />
+                                          <ListView fx:id="PlayerId_ListView" prefHeight="187.0" prefWidth="126.0" />
+                                          <ListView fx:id="PlayingDate_ListView" prefHeight="187.0" prefWidth="127.0" />
+                                          <ListView fx:id="Score_ListView" prefHeight="187.0" prefWidth="129.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="player_Tab" text="Add player">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="348.0">
+                           <children>
+                              <VBox layoutX="4.0" layoutY="2.0" prefHeight="394.0" prefWidth="487.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <effect>
+                                    <Glow level="0.62" />
+                                 </effect>
+                              </VBox>
+                              <VBox layoutX="14.0" layoutY="12.0" prefHeight="394.0" prefWidth="487.0">
+                                 <effect>
+                                    <Glow level="0.62" />
+                                 </effect>
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="LEFT" hgrow="NEVER" maxWidth="247.0" minWidth="10.0" prefWidth="160.0" />
+                                          <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="343.0" minWidth="10.0" prefWidth="343.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="First Name" />
+                                          <Label text="Last Name" GridPane.rowIndex="1" />
+                                          <Label prefHeight="17.0" prefWidth="65.0" text="Address" GridPane.rowIndex="2" />
+                                          <Label text="Postal Code" GridPane.rowIndex="3" />
+                                          <Label text="Province" GridPane.rowIndex="4" />
+                                          <TextField fx:id="addProvince_TextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <TextField fx:id="addPostalCode_TextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField fx:id="addAddress_TextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <TextField fx:id="addLastName_TextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="addFirstName_TextField" GridPane.columnIndex="1" />
+                                          <Label text="Phone Number" GridPane.rowIndex="5" />
+                                          <TextField fx:id="addPhoneNumber_TextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                    <HBox alignment="CENTER" prefHeight="27.0" prefWidth="487.0">
+                                       <children>
+                                          <Button fx:id="Addplayer_Button" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Add" />
+                                          <Label fx:id="addPlayerMessage" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="addgame_Tab" text="Add Game">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="348.0">
+                           <children>
+                              <VBox layoutX="4.0" layoutY="2.0" prefHeight="394.0" prefWidth="487.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <effect>
+                                    <Glow level="0.62" />
+                                 </effect>
+                              </VBox>
+                              <VBox layoutX="14.0" layoutY="12.0" prefHeight="394.0" prefWidth="487.0">
+                                 <effect>
+                                    <Glow level="0.62" />
+                                 </effect>
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="247.0" minWidth="10.0" prefWidth="160.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.0" minWidth="10.0" prefWidth="343.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Add Game name in system" />
+                                          <TextField fx:id="GameName_TextField" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <HBox alignment="CENTER" prefHeight="27.0" prefWidth="487.0">
+                                       <children>
+                                          <Button fx:id="AddGame_Button" contentDisplay="CENTER" mnemonicParsing="false" text="Add Game" />
+                                          <Label fx:id="AddGameMessage" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="gamePlayed_Tab" text="Game Played">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="8.0" layoutY="1.0" prefHeight="450.0" prefWidth="632.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+                                 <children>
+                                    <GridPane>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Select Player" />
+                                          <ComboBox fx:id="gamePlayedPlayers_ComboBox" prefHeight="25.0" prefWidth="213.0" GridPane.columnIndex="1" />
+                                          <Label text="Date" GridPane.rowIndex="1" />
+                                          <DatePicker fx:id="gamePlayed_DatePicker" prefHeight="25.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Score" GridPane.rowIndex="2" />
+                                          <TextField fx:id="gamePlayedScore" prefHeight="16.0" prefWidth="187.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="Select Game" GridPane.rowIndex="3" />
+                                          <ComboBox fx:id="gamePlayed_ComboBox" prefHeight="25.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                       </children>
+                                    </GridPane>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="addGamePlayedRecord" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="93.0" text="Add Record" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
